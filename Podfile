@@ -4,5 +4,6 @@ use_frameworks!
 
 target 'THSmart' do
     pod 'Alamofire'	# 网络
-    pod 'Kingfisher'  # 图片异步加载
+    pod 'Kingfisher'  	# 图片异步加载
+    pod 'SnapKit'    	# 代码约束
 end
