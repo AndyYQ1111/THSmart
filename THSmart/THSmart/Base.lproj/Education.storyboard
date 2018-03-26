@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qmh-FX-Dnk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--EducationVC-->
+        <scene sceneID="e4m-Ig-gGx">
+            <objects>
+                <viewController id="eBo-Vb-kGp" customClass="EducationVC" customModule="THSmart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p1w-hR-o4r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2o-g7-cPp" customClass="PageView" customModule="THSmart" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zOB-Uf-7g2" firstAttribute="bottom" secondItem="g2o-g7-cPp" secondAttribute="bottom" id="A00-9N-hhf"/>
+                            <constraint firstItem="g2o-g7-cPp" firstAttribute="top" secondItem="zOB-Uf-7g2" secondAttribute="top" id="E3z-UA-NE6"/>
+                            <constraint firstItem="zOB-Uf-7g2" firstAttribute="trailing" secondItem="g2o-g7-cPp" secondAttribute="trailing" id="z0c-pc-95I"/>
+                            <constraint firstItem="g2o-g7-cPp" firstAttribute="leading" secondItem="zOB-Uf-7g2" secondAttribute="leading" id="z3F-wt-wU4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zOB-Uf-7g2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gzL-B8-Y17"/>
+                    <connections>
+                        <outlet property="pageView" destination="g2o-g7-cPp" id="gDT-P9-MWE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rtf-L4-I2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1417" y="439"/>
+        </scene>
+        <!--早教-->
+        <scene sceneID="4dX-ib-Cee">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qmh-FX-Dnk" customClass="BaseNavigationController" customModule="THSmart" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="早教" image="tab_zaojiao_n" selectedImage="tab_zaojiao_s" id="Oop-0F-Lr5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wgj-Qb-GCr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eBo-Vb-kGp" kind="relationship" relationship="rootViewController" id="HBp-wV-xgb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OsJ-vm-eSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608" y="438.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_zaojiao_n" width="22" height="22"/>
+        <image name="tab_zaojiao_s" width="22" height="22"/>
+    </resources>
+</document>

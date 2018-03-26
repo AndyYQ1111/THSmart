@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicPlayerView" customModule="THSmart" customModuleProvider="target">
+            <connections>
+                <outlet property="btn_play" destination="Lfo-sz-Kvf" id="2aY-Bh-MPP"/>
+                <outlet property="hySlider" destination="SSz-6B-wLy" id="ayx-Wm-s1j"/>
+                <outlet property="label_trackTitle" destination="TY1-lw-9yV" id="t8w-ej-Kex"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfo-sz-Kvf">
+                    <rect key="frame" x="12" y="4" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="ZFm-Fm-Leu"/>
+                        <constraint firstAttribute="height" constant="44" id="buh-DD-6lX"/>
+                    </constraints>
+                    <state key="normal" image="icon_zanting"/>
+                    <state key="selected" image="icon_bofang"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TY1-lw-9yV">
+                    <rect key="frame" x="62" y="29" width="263" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SSz-6B-wLy" customClass="HYSlider">
+                    <rect key="frame" x="62" y="10" width="263" height="10"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="NbU-dU-tuG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TY1-lw-9yV" secondAttribute="trailing" constant="12" id="5h6-AG-1Tw"/>
+                <constraint firstItem="SSz-6B-wLy" firstAttribute="leading" secondItem="Lfo-sz-Kvf" secondAttribute="trailing" constant="6" id="70v-2B-WNc"/>
+                <constraint firstItem="TY1-lw-9yV" firstAttribute="leading" secondItem="Lfo-sz-Kvf" secondAttribute="trailing" constant="6" id="e6Y-XG-JbW"/>
+                <constraint firstAttribute="trailing" secondItem="SSz-6B-wLy" secondAttribute="trailing" constant="12" id="kIC-yE-feD"/>
+                <constraint firstAttribute="bottom" secondItem="TY1-lw-9yV" secondAttribute="bottom" constant="6" id="l66-g6-DPJ"/>
+                <constraint firstItem="Lfo-sz-Kvf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nNG-vQ-t6X"/>
+                <constraint firstItem="SSz-6B-wLy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="s70-7j-1lG"/>
+                <constraint firstItem="Lfo-sz-Kvf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="uB6-Tk-GlJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="15.5" y="-253"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_bofang" width="20" height="20"/>
+        <image name="icon_zanting" width="20" height="20"/>
+    </resources>
+</document>
