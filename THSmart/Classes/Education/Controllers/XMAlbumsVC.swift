@@ -70,7 +70,7 @@ extension XMAlbumsVC: UITableViewDelegate,UITableViewDataSource {
         
         let nextVc = XMAlbumDetaliVC()
         nextVc.album = viewModel.albums[indexPath.row]
-        
+        nextVc.listSort = .AlbumDetail
         navigationController?.pushViewController(nextVc, animated: true)
     }
 }

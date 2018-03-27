@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--EducationVC-->
+        <!--早教-->
         <scene sceneID="e4m-Ig-gGx">
             <objects>
                 <viewController id="eBo-Vb-kGp" customClass="EducationVC" customModule="THSmart" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zOB-Uf-7g2"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gzL-B8-Y17"/>
+                    <navigationItem key="navigationItem" title="早教" id="gzL-B8-Y17"/>
                     <connections>
                         <outlet property="pageView" destination="g2o-g7-cPp" id="gDT-P9-MWE"/>
                     </connections>

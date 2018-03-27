@@ -38,7 +38,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Q0M-Pl-xKU" secondAttribute="bottom" id="AD9-N8-jp9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Q0M-Pl-xKU" secondAttribute="bottom" priority="999" id="AD9-N8-jp9"/>
                 <constraint firstItem="Q0M-Pl-xKU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bOK-yX-mYQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Q0M-Pl-xKU" secondAttribute="trailing" id="j6k-ab-CUk"/>
                 <constraint firstItem="Q0M-Pl-xKU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zXo-hC-DQN"/>

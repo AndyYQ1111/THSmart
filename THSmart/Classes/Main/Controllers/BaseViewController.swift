@@ -45,7 +45,7 @@ class BaseViewController: UIViewController {
 //        self.navigationController?.navigationItem.backBarButtonItem = backItem
        
         //设置导航栏背景图
-        self.navigationController?.navigationBar .setBackgroundImage(UIImage.init(gradientColors: blueGradientColors, size: CGSize(width: KScreenW, height: KNavBarH)), for: .default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(gradientColors: blueGradientColors, size: CGSize(width: KScreenW, height: KNavBarH)), for: .default)
         
         self.navigationController?.navigationBar.barStyle = .black;
     }

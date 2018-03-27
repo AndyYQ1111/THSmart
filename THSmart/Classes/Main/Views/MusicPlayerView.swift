@@ -8,6 +8,8 @@
 
 import UIKit
 
+let KXMHistorys = "xmHistoryArr"
+
 class MusicPlayerView: UIView {
     
     @IBOutlet weak var label_trackTitle: UILabel!
@@ -75,11 +77,6 @@ extension MusicPlayerView {
             btn_play.isSelected = true
             playMusic(trackIndex: trackIndex, tracks: tracks)
         }
-        
-        
-//            XMSDKPlayerStatePlaying = 0,         //正在播放
-//            XMSDKPlayerStatePaused,              //暂停
-//        XMSDKPlayerStateStop
     }
     
     func playMusic(trackIndex: Int,tracks: [XMTrack]) {
@@ -111,6 +108,25 @@ extension MusicPlayerView: XMTrackPlayerDelegate {
                 trackIndex = index
             }
         }
+        
+        var xmHistoryArr:[Dictionary<AnyHashable,Any>] = UserDefaults.standard.object(forKey: KXMHistorys) as? [Dictionary<AnyHashable, Any>] ?? []
+        
+        for (index,value) in xmHistoryArr.enumerated() {
+            guard let dic = value as? Dictionary<String,Any> else {return}
+            
+            let tempTrack = XMTrack(dictionary: dic)
+        
+            if currentTrack?.trackId == tempTrack?.trackId {
+                xmHistoryArr.remove(at: index)
+                break
+            }
+        }
+        
+        xmHistoryArr.append(currentTrack!.toDictionary())
+        
+        UserDefaults.standard.setValue(xmHistoryArr, forKey: KXMHistorys)
+        UserDefaults.standard.synchronize()
+    
         label_trackTitle.text = currentTrack?.trackTitle ?? ""
         hySlider.maxValue = CGFloat(currentTrack?.duration ?? 0)
     }

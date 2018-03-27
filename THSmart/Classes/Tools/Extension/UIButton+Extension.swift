@@ -9,14 +9,18 @@
 import UIKit
 
 extension UIButton {
-    convenience init(title : String ,imageName : String, titleSize : CGFloat, highlightedColor :UIColor) {
+    convenience init(title : String?,imageName : String?, titleSize : CGFloat) {
         self.init(type: .custom)
-        setTitle(title, for: .normal)
+        if title != nil {
+            setTitle(title, for: .normal)
+        }
         
-        let img = UIImage.init(named: imageName)
-        setImage(img, for: .normal)
+        if imageName != nil {
+            let img = UIImage.init(named: imageName!)
+            setImage(img, for: .normal)
+        }
+        
         setTitleColor(UIColor.white, for: .normal)
-        setTitleColor(highlightedColor, for: .highlighted)
         titleLabel?.font = UIFont.systemFont(ofSize: titleSize)
         sizeToFit()
     }

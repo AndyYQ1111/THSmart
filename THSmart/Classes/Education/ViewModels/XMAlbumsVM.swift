@@ -52,6 +52,5 @@ extension XMAlbumsVM {
             albums.removeAll()
         }
         albums += tempArr
-        
     }
 }

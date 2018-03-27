@@ -10,7 +10,7 @@ import UIKit
 
 extension UIBarButtonItem {
     convenience init(title : String,imageName: String = "left_select_img", titleSize : CGFloat = 16,target: Any? , action: Selector) {
-        let btn = UIButton(title: title, imageName: imageName, titleSize: titleSize, highlightedColor: UIColor.white)
+        let btn = UIButton(title: title, imageName: imageName, titleSize: titleSize)
         btn.addTarget(target, action: action, for: .touchUpInside)
         self.init(customView: btn)
     }
