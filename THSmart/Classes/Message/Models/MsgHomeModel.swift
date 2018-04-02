@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MsgModel : Codable{
+class MsgHomeModel : Codable{
     var content: String?
     var jpgPath: String?
     var msgType: String?

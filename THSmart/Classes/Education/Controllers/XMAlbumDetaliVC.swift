@@ -22,6 +22,8 @@ class XMAlbumDetaliVC: BaseViewController {
     @IBOutlet weak var label_playNum: UILabel!
     @IBOutlet weak var label_albumSort: UILabel!
     
+    var searchController:UISearchController?
+    
     var album :XMAlbum?
     var listSort:XMTrackListSort = .AlbumDetail
     
@@ -37,6 +39,18 @@ class XMAlbumDetaliVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.searchController?.searchBar.isHidden = false
+        self.searchController?.isActive = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.searchController?.searchBar.isHidden = true
+        self.searchController?.isActive = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,15 +86,13 @@ extension XMAlbumDetaliVC {
             }
         }else {
             self.title = "搜索"
-            ///请求数据
-            viewModel.requestSearchData(page: 1, searchStr: "小", finishCallBack: {
-                self.tv_track.reloadData()
-            })
+            addSearchBar()
         }
         
         addNavItem()
     }
     
+    //添加自定义导航栏
     func addNavItem() {
         let item = UIBarButtonItem(customView: itemBtn)
         self.navigationItem.rightBarButtonItem = item
@@ -97,6 +109,62 @@ extension XMAlbumDetaliVC {
         
         tv_track.reloadData()
     }
+    
+    func addSearchBar()  {
+
+        let searchController = UISearchController(searchResultsController: nil)
+    
+        searchController.delegate = self
+        searchController.searchResultsUpdater = self
+        
+        // 搜索框
+        let bar = searchController.searchBar
+        // 样式
+        bar.barStyle = .default
+        // 设置光标及取消按钮的颜色
+        bar.tintColor = UIColor(red: 0.12, green: 0.74, blue: 0.13, alpha: 1.0)
+        // 设置代理
+        bar.delegate = self
+        // 去除背景及上下两条横线
+        bar.setBackgroundImage(UIImage.init(color: UIColor.groupTableViewBackground), for: .any, barMetrics: .default)
+        
+        bar.setValue("取消", forKey: "_cancelButtonText")
+        
+        bar.placeholder = "输入歌曲名称"
+        
+        // 因为在当前控制器展示结果, 所以不需要这个透明视图
+        searchController.dimsBackgroundDuringPresentation = false
+        // 默认为YES,控制搜索时，是否隐藏导航栏
+        searchController.hidesNavigationBarDuringPresentation = false
+        
+        // 需要进行强引用 searchController
+        self.searchController = searchController
+        
+        
+        // 将搜索框视图�设置为tableView的tableHeaderView
+        tv_track.tableHeaderView = searchController.searchBar
+    }
+}
+
+extension XMAlbumDetaliVC: UISearchBarDelegate, UISearchResultsUpdating,UISearchControllerDelegate {
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchStr: String = searchController.searchBar.text ?? ""
+        if searchStr.count > 0 {
+            ///请求数据
+            viewModel.requestSearchData(page: 1, searchStr: searchStr, finishCallBack: {
+                self.tv_track.reloadData()
+            })
+        }
+    }
+    
+    func didPresentSearchController(_ searchController: UISearchController) {
+        searchController.searchBar.becomeFirstResponder()
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.endEditing(true)
+        self.searchController?.isActive = false
+    }
 }
 
 extension XMAlbumDetaliVC: UITableViewDataSource,UITableViewDelegate {
@@ -109,6 +177,7 @@ extension XMAlbumDetaliVC: UITableViewDataSource,UITableViewDelegate {
         cell.multi_choice = viewModel.multi_choice
         cell.model = viewModel.trackModels[indexPath.row]
         cell.choiceCallBack = {
+            ///左导航栏按钮设置
             if self.itemBtn.titleLabel?.text == "取消" || self.itemBtn.titleLabel?.text == "点播"{
                 var hasSelected = false
                 for trackModel in self.viewModel.trackModels {
@@ -123,6 +192,9 @@ extension XMAlbumDetaliVC: UITableViewDataSource,UITableViewDelegate {
                     self.itemBtn.setTitle("取消", for: .normal)
                 }
             }
+            
+            ///点击事件
+            
             
         }
         return cell

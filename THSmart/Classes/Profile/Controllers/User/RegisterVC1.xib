@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterVC1" customModule="THSmart" customModuleProvider="target">
+            <connections>
+                <outlet property="btn_nextStep" destination="mmt-pD-tsh" id="PWm-Dc-VxD"/>
+                <outlet property="tf_code" destination="iWd-SP-Xdg" id="xE5-OH-ahs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iWd-SP-Xdg">
+                    <rect key="frame" x="15" y="40" width="345" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="WQ7-hN-e3d"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmt-pD-tsh">
+                    <rect key="frame" x="15" y="106" width="345" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="eI4-Qe-4zT"/>
+                    </constraints>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="nextStepAction:" destination="-1" eventType="touchUpInside" id="ncg-Ky-3JA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mmt-pD-tsh" firstAttribute="trailing" secondItem="iWd-SP-Xdg" secondAttribute="trailing" id="2UX-I9-j3a"/>
+                <constraint firstItem="mmt-pD-tsh" firstAttribute="leading" secondItem="iWd-SP-Xdg" secondAttribute="leading" id="8n1-4Y-mY6"/>
+                <constraint firstItem="iWd-SP-Xdg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="Gy4-35-kwc"/>
+                <constraint firstItem="iWd-SP-Xdg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="HFv-bt-mJC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iWd-SP-Xdg" secondAttribute="trailing" constant="15" id="LiB-Jg-yhr"/>
+                <constraint firstItem="mmt-pD-tsh" firstAttribute="top" secondItem="iWd-SP-Xdg" secondAttribute="bottom" constant="30" id="V8o-Sk-hJa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

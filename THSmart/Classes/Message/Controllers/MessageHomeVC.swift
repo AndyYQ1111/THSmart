@@ -12,7 +12,7 @@ class MessageHomeVC: BaseViewController {
 
     @IBOutlet weak var tv_msgHome: UITableView!
     
-    var msgArr : [MsgModel] = []
+    var msgArr : [MsgHomeModel] = []
     
     private lazy var viewModel : MessageHomeViewModel = MessageHomeViewModel()
     
@@ -25,6 +25,12 @@ class MessageHomeVC: BaseViewController {
 //            tv_msgHome.reloadData()
 //        }
     }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        tv_msgHome.contentInset = UIEdgeInsets.zero
+        tv_msgHome.scrollIndicatorInsets = UIEdgeInsets.zero
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -36,14 +42,14 @@ extension MessageHomeVC {
         self.title = "消息"
         tv_msgHome.register(UINib.init(nibName: "MsgHomeCell", bundle: nil), forCellReuseIdentifier: cellID)
         
-        let model0 = MsgModel()
+        let model0 = MsgHomeModel()
         model0.jpgPath = "icon_shouye_jiaren"
         model0.content = "0个家人"
         model0.title = "家人"
         model0.timeCreate = ""
         model0.unReadCount = ""
         
-        let model1 = MsgModel()
+        let model1 = MsgHomeModel()
         model1.jpgPath = "icon_shouye_haoyou"
         model1.content = "0个好友"
         model1.title = "好友"
@@ -78,5 +84,9 @@ extension MessageHomeVC : UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 76
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        navigationController?.pushViewController(GroupMsgVC(), animated: true)
     }
 }

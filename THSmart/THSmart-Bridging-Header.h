@@ -8,3 +8,4 @@
 #import "XMTrack.h"
 #import "HYSlider.h"
 #import "XMSDKPlayer.h"
+#import <WebKit/WebKit.h>

@@ -43,8 +43,6 @@ class TrackCell: BaseTableViewCell {
         choiceCallBack()
     }
     
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

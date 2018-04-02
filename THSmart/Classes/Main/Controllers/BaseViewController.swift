@@ -33,19 +33,18 @@ let KTabBarH : CGFloat = isIphoneX ? 49 + 34 : 49
 
 //蓝色渐变色
 
-let blueGradientColors = [UIColor(r: 70.0, g: 137, b: 247),UIColor(r: 52, g: 131, b: 237)]
+let kBlueGradientColors = [UIColor(r: 70.0, g: 137, b: 247).cgColor,UIColor(r: 52, g: 131, b: 237).cgColor]
 
 
 class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let backItem = UIBarButtonItem.init(image: UIImage.init(named: "icon_arrow_right"), style: .plain, target: nil, action: nil)
+        
         self.navigationController?.navigationBar.tintColor = UIColor.white
-//        self.navigationController?.navigationItem.backBarButtonItem = backItem
-       
+
         //设置导航栏背景图
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(gradientColors: blueGradientColors, size: CGSize(width: KScreenW, height: KNavBarH)), for: .default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage.init(gradientColors: kBlueGradientColors, size: CGSize(width: KScreenW, height: KNavBarH)), for: .default)
         
         self.navigationController?.navigationBar.barStyle = .black;
     }

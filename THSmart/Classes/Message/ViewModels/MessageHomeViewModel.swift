@@ -10,7 +10,7 @@ import UIKit
 
 class MessageHomeViewModel {
     //MARK:- 懒加载属性
-    lazy var msgs : [MsgModel] = [MsgModel]()
+    lazy var msgs : [MsgHomeModel] = [MsgHomeModel]()
 }
 
 extension MessageHomeViewModel {
@@ -35,7 +35,7 @@ extension MessageHomeViewModel {
                 let jsonData = try! JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
                 let decode = JSONDecoder()
                 do {
-                    let msgModel = try decode.decode(MsgModel.self, from: jsonData)
+                    let msgModel = try decode.decode(MsgHomeModel.self, from: jsonData)
                     self.msgs.append(msgModel)
                     print("解析成功:\(msgModel.jpgPath ?? "")")
                 } catch  {

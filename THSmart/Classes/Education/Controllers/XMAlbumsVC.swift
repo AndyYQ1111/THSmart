@@ -47,7 +47,6 @@ extension XMAlbumsVC: XMReqDelegate {
     }
     
     func didXMInitReqFail(_ respModel: XMErrorModel!) {
-        
     }
 }
 

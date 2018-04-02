@@ -183,7 +183,7 @@ typedef void (^MBProgressHUDCompletionBlock)(void);
 - (id)initWithView:(UIView *)view;
 /**
  * set User active when loading 
- * param
+ * @ param
  */
 
 - (void)setUserActiveWhenLoading:(BOOL)status;

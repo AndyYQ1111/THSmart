@@ -23,31 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-//        xmRegister()
-        
+        window?.rootViewController = BaseNavigationController(rootViewController: LoginVC())
         return true
     }
 }
-
-////喜马拉雅
-//extension AppDelegate:XMLYAuthorizeDelegate {
-//
-//    func xmRegister() {
-//        XMLYAuthorize.shareInstance().initWithAppkey(kXMAppKey, appSecret: kXMSecret, appRedirectUri: "", appPackageId: "", appName: "", delegate: self)
-//    }
-//
-//    func onAuthorizeSuccess(_ responseType: XmlyResponseType, responseData authorizeModel: XMLYAuthorizeModel!) {
-//        if (responseType == .AuthorizeSuccess) {
-//            print("喜马拉雅SDK授权成功")
-//        }
-//    }
-//
-//    func onAuthorizeFail(_ errorType: XmlyResponseType, errorInfo info: [AnyHashable : Any]!) {
-//        print("喜马拉雅SDK授权失败")
-//    }
-//
-//    func onRequestQRCodeSuccess(_ responseType: XmlyResponseType, responseData imageData: Data!) {}
-//
-//    func onRequestQRCodeFail(_ errorType: XmlyResponseType, errorInfo info: [AnyHashable : Any]!) {}
-//}
 

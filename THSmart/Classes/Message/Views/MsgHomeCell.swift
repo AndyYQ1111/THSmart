@@ -16,7 +16,7 @@ class MsgHomeCell: BaseTableViewCell {
     @IBOutlet weak var label_des: UILabel!
     @IBOutlet weak var label_time: UILabel!
     
-    var model: MsgModel?{
+    var model: MsgHomeModel?{
         didSet{
             let url = URL(string: (model?.jpgPath)!)
             label_title.text = model?.title

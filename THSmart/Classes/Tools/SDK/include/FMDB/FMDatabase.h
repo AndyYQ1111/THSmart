@@ -144,7 +144,7 @@
  
  Use this method to generate values to set the dateFormat property.
  
- param dateFormat A valid NSDateFormatter format string.
+ @param format A valid NSDateFormatter format string.
  
  Example:
  

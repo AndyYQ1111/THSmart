@@ -35,6 +35,24 @@ extension XMAlbumDetaliVM {
         }
     }
     
+    //点播
+    func requestDB() {
+//        var  URLStr: String = "http://\(dev.intelligentInteractionIpAddr):\(dev.intelligentInteractionPort)/goform/RecvCmdSvr"
+//        NSDictionary *paraDic = @{@"id":@"123456",@"name":@"1201",@"type":@"Intelligent-CS",@"cameraid":dev.devId,@"flage":@"1",@"urlList":urlStr};
+        
+        
+        NetWorkTools.requestData(method: .POST, urlString: "") { (result) in
+            
+        }
+    }
+    
+    //停播
+    func requestTB() {
+        
+    }
+    
+    
+    
     func getHistory(finishCallBack:()->()) {
         guard let tempArr = UserDefaults.standard.array(forKey: KXMHistorys) else {
             return

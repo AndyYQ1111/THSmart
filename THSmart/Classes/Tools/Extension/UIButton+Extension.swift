@@ -24,4 +24,22 @@ extension UIButton {
         titleLabel?.font = UIFont.systemFont(ofSize: titleSize)
         sizeToFit()
     }
+    
+    func imgUp() {
+        let offset:CGFloat = 16.0
+        
+        self.adjustsImageWhenHighlighted = false
+
+        self.titleEdgeInsets = UIEdgeInsets(top: 0, left: -(self.imageView?.bounds.width)!, bottom: -(self.imageView?.bounds.height)! - offset/2, right: 0)
+
+        self.imageEdgeInsets = UIEdgeInsets(top: -(self.titleLabel?.intrinsicContentSize.height)! - offset/2, left: 0, bottom: 0, right: -(self.titleLabel?.intrinsicContentSize.width)!)
+    }
+    
+    func imgRight()  {
+        let imageWidth:CGFloat = (self.imageView?.bounds.width)! + 5
+        let labelWidth:CGFloat = (self.titleLabel?.bounds.width)!
+        
+        self.imageEdgeInsets = UIEdgeInsets(top: 0, left: labelWidth, bottom: 0, right: -labelWidth)
+        self.titleEdgeInsets = UIEdgeInsets(top: 0, left: -imageWidth, bottom: 0, right: imageWidth)
+    }
 }
