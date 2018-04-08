@@ -13,6 +13,8 @@ extension UIColor {
         self.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1.0)
     }
     
+    
+    //获取RGB
     var r:CGFloat {
         get {
             if (self.cgColor).components?.count == 4 {

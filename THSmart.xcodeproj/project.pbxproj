@@ -44,6 +44,28 @@
 		5A1A822F206E14D80006E56B /* GroupMsgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A822D206E14D80006E56B /* GroupMsgCell.swift */; };
 		5A1A8230206E14D80006E56B /* GroupMsgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A1A822E206E14D80006E56B /* GroupMsgCell.xib */; };
 		5A1A8232206E25B80006E56B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1A8231206E25B80006E56B /* String+Extension.swift */; };
+		5A4E0F8520730C7F00CF04AD /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0F8420730C7F00CF04AD /* ProfileVC.swift */; };
+		5A4E0F882073163A00CF04AD /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0F862073163A00CF04AD /* UserInfoVC.swift */; };
+		5A4E0F892073163A00CF04AD /* UserInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E0F872073163A00CF04AD /* UserInfoVC.xib */; };
+		5A4E0F8C207317D000CF04AD /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0F8A207317D000CF04AD /* UserInfoCell.swift */; };
+		5A4E0F8D207317D000CF04AD /* UserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E0F8B207317D000CF04AD /* UserInfoCell.xib */; };
+		5A4E0F8F207318D000CF04AD /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0F8E207318D000CF04AD /* UserInfoModel.swift */; };
+		5A4E0F9120731D8A00CF04AD /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0F9020731D8A00CF04AD /* UserInfoViewModel.swift */; };
+		5A4E0F932073217D00CF04AD /* PhotoCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0F922073217D00CF04AD /* PhotoCenter.swift */; };
+		5A4E0F96207364C600CF04AD /* DevListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0F94207364C600CF04AD /* DevListVC.swift */; };
+		5A4E0F97207364C600CF04AD /* DevListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E0F95207364C600CF04AD /* DevListVC.xib */; };
+		5A4E0F9A207364D900CF04AD /* DevSetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0F98207364D900CF04AD /* DevSetVC.swift */; };
+		5A4E0F9B207364D900CF04AD /* DevSetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E0F99207364D900CF04AD /* DevSetVC.xib */; };
+		5A4E0F9E207364F000CF04AD /* SetWIFIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0F9C207364F000CF04AD /* SetWIFIVC.swift */; };
+		5A4E0F9F207364F000CF04AD /* SetWIFIVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E0F9D207364F000CF04AD /* SetWIFIVC.xib */; };
+		5A4E0FA22073650300CF04AD /* GetWIFIVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0FA02073650300CF04AD /* GetWIFIVC.swift */; };
+		5A4E0FA32073650300CF04AD /* GetWIFIVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E0FA12073650300CF04AD /* GetWIFIVC.xib */; };
+		5A4E0FA62073655200CF04AD /* SearchDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0FA42073655200CF04AD /* SearchDev.swift */; };
+		5A4E0FA72073655200CF04AD /* SearchDev.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E0FA52073655200CF04AD /* SearchDev.xib */; };
+		5A4E0FAA2073656800CF04AD /* ScanAddDev.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0FA82073656700CF04AD /* ScanAddDev.swift */; };
+		5A4E0FAB2073656800CF04AD /* ScanAddDev.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E0FA92073656800CF04AD /* ScanAddDev.xib */; };
+		5A4E0FAE2073676400CF04AD /* DevCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4E0FAC2073676400CF04AD /* DevCell.swift */; };
+		5A4E0FAF2073676400CF04AD /* DevCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4E0FAD2073676400CF04AD /* DevCell.xib */; };
 		5A80AF45206099A3008B9458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80AF44206099A3008B9458 /* AppDelegate.swift */; };
 		5A80AF47206099A3008B9458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A80AF46206099A3008B9458 /* ViewController.swift */; };
 		5A80AF4A206099A3008B9458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A80AF48206099A3008B9458 /* Main.storyboard */; };
@@ -122,6 +144,28 @@
 		5A1A822D206E14D80006E56B /* GroupMsgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupMsgCell.swift; sourceTree = "<group>"; };
 		5A1A822E206E14D80006E56B /* GroupMsgCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupMsgCell.xib; sourceTree = "<group>"; };
 		5A1A8231206E25B80006E56B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		5A4E0F8420730C7F00CF04AD /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		5A4E0F862073163A00CF04AD /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
+		5A4E0F872073163A00CF04AD /* UserInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoVC.xib; sourceTree = "<group>"; };
+		5A4E0F8A207317D000CF04AD /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
+		5A4E0F8B207317D000CF04AD /* UserInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoCell.xib; sourceTree = "<group>"; };
+		5A4E0F8E207318D000CF04AD /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		5A4E0F9020731D8A00CF04AD /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		5A4E0F922073217D00CF04AD /* PhotoCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCenter.swift; sourceTree = "<group>"; };
+		5A4E0F94207364C600CF04AD /* DevListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevListVC.swift; sourceTree = "<group>"; };
+		5A4E0F95207364C600CF04AD /* DevListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevListVC.xib; sourceTree = "<group>"; };
+		5A4E0F98207364D900CF04AD /* DevSetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevSetVC.swift; sourceTree = "<group>"; };
+		5A4E0F99207364D900CF04AD /* DevSetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevSetVC.xib; sourceTree = "<group>"; };
+		5A4E0F9C207364F000CF04AD /* SetWIFIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetWIFIVC.swift; sourceTree = "<group>"; };
+		5A4E0F9D207364F000CF04AD /* SetWIFIVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetWIFIVC.xib; sourceTree = "<group>"; };
+		5A4E0FA02073650300CF04AD /* GetWIFIVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetWIFIVC.swift; sourceTree = "<group>"; };
+		5A4E0FA12073650300CF04AD /* GetWIFIVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetWIFIVC.xib; sourceTree = "<group>"; };
+		5A4E0FA42073655200CF04AD /* SearchDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDev.swift; sourceTree = "<group>"; };
+		5A4E0FA52073655200CF04AD /* SearchDev.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchDev.xib; sourceTree = "<group>"; };
+		5A4E0FA82073656700CF04AD /* ScanAddDev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanAddDev.swift; sourceTree = "<group>"; };
+		5A4E0FA92073656800CF04AD /* ScanAddDev.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanAddDev.xib; sourceTree = "<group>"; };
+		5A4E0FAC2073676400CF04AD /* DevCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevCell.swift; sourceTree = "<group>"; };
+		5A4E0FAD2073676400CF04AD /* DevCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DevCell.xib; sourceTree = "<group>"; };
 		5A80AF41206099A3008B9458 /* THSmart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THSmart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A80AF44206099A3008B9458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A80AF46206099A3008B9458 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +283,18 @@
 		5A1A820B206B81AF0006E56B /* Dev */ = {
 			isa = PBXGroup;
 			children = (
+				5A4E0F94207364C600CF04AD /* DevListVC.swift */,
+				5A4E0F95207364C600CF04AD /* DevListVC.xib */,
+				5A4E0F98207364D900CF04AD /* DevSetVC.swift */,
+				5A4E0F99207364D900CF04AD /* DevSetVC.xib */,
+				5A4E0FA02073650300CF04AD /* GetWIFIVC.swift */,
+				5A4E0FA12073650300CF04AD /* GetWIFIVC.xib */,
+				5A4E0F9C207364F000CF04AD /* SetWIFIVC.swift */,
+				5A4E0F9D207364F000CF04AD /* SetWIFIVC.xib */,
+				5A4E0FA42073655200CF04AD /* SearchDev.swift */,
+				5A4E0FA52073655200CF04AD /* SearchDev.xib */,
+				5A4E0FA82073656700CF04AD /* ScanAddDev.swift */,
+				5A4E0FA92073656800CF04AD /* ScanAddDev.xib */,
 			);
 			path = Dev;
 			sourceTree = "<group>";
@@ -256,6 +312,8 @@
 				5A1A8226206CEA350006E56B /* RegisterVC2.xib */,
 				5A1A8229206DC9480006E56B /* WebViewVC.swift */,
 				5A1A822A206DC9480006E56B /* WebViewVC.xib */,
+				5A4E0F862073163A00CF04AD /* UserInfoVC.swift */,
+				5A4E0F872073163A00CF04AD /* UserInfoVC.xib */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -315,6 +373,7 @@
 			children = (
 				5A189BBF2060FE0700A6BF08 /* NetWorkTools.swift */,
 				5A1A8213206C85B80006E56B /* Validate.swift */,
+				5A4E0F922073217D00CF04AD /* PhotoCenter.swift */,
 				5AB78D8520689221009A4F2E /* HYSlider */,
 				5AC17BE62064992D00535C8C /* Extension */,
 				5AC17C3C2064A3C900535C8C /* SDK */,
@@ -439,6 +498,7 @@
 			children = (
 				5A1A8215206C862D0006E56B /* LoginVM.swift */,
 				5A1A821F206CE30A0006E56B /* RegisterVM.swift */,
+				5A4E0F9020731D8A00CF04AD /* UserInfoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -446,6 +506,7 @@
 		5A80AF6420609F1B008B9458 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5A4E0F8E207318D000CF04AD /* UserInfoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -453,6 +514,7 @@
 		5A80AF6520609F1B008B9458 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5A4E0F8420730C7F00CF04AD /* ProfileVC.swift */,
 				5A1A820C206B81AF0006E56B /* User */,
 				5A1A820B206B81AF0006E56B /* Dev */,
 			);
@@ -462,6 +524,10 @@
 		5A80AF6620609F1B008B9458 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5A4E0F8A207317D000CF04AD /* UserInfoCell.swift */,
+				5A4E0F8B207317D000CF04AD /* UserInfoCell.xib */,
+				5A4E0FAC2073676400CF04AD /* DevCell.swift */,
+				5A4E0FAD2073676400CF04AD /* DevCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -769,24 +835,33 @@
 				5A1A822C206DC9480006E56B /* WebViewVC.xib in Resources */,
 				5A1A821A206CD8880006E56B /* Podfile in Resources */,
 				5AC17C8A2064A3C900535C8C /* XMResource.bundle in Resources */,
+				5A4E0F892073163A00CF04AD /* UserInfoVC.xib in Resources */,
 				5A80AF782060A2C1008B9458 /* Profile.storyboard in Resources */,
+				5A4E0F9B207364D900CF04AD /* DevSetVC.xib in Resources */,
 				5A1A821E206CE0BC0006E56B /* RegisterVC.xib in Resources */,
+				5A4E0F9F207364F000CF04AD /* SetWIFIVC.xib in Resources */,
 				5AC17CAB2065005C00535C8C /* TrackCell.xib in Resources */,
 				5A189BBC2060F51300A6BF08 /* MsgHomeCell.xib in Resources */,
 				5AC17CA72064FD8A00535C8C /* XMAlbumDetaliVC.xib in Resources */,
 				5A80AF4F206099A3008B9458 /* LaunchScreen.storyboard in Resources */,
+				5A4E0FA72073655200CF04AD /* SearchDev.xib in Resources */,
 				5A189BB02060D52B00A6BF08 /* GroupMsgVC.xib in Resources */,
+				5A4E0F97207364C600CF04AD /* DevListVC.xib in Resources */,
 				5A80AF4C206099A3008B9458 /* Assets.xcassets in Resources */,
+				5A4E0FAF2073676400CF04AD /* DevCell.xib in Resources */,
 				5A1A8230206E14D80006E56B /* GroupMsgCell.xib in Resources */,
 				5AC17C922064A8B700535C8C /* AlbumCell.xib in Resources */,
+				5A4E0FAB2073656800CF04AD /* ScanAddDev.xib in Resources */,
 				5AB78D7E20687C97009A4F2E /* XMAlbumsVC.xib in Resources */,
 				5A80AF722060A26B008B9458 /* Message.storyboard in Resources */,
 				5A189BCE206232A700A6BF08 /* PageView.xib in Resources */,
 				5A80AF4A206099A3008B9458 /* Main.storyboard in Resources */,
 				5AB78D8420688C2F009A4F2E /* MusicPlayerView.xib in Resources */,
 				5A1A8228206CEA350006E56B /* RegisterVC2.xib in Resources */,
+				5A4E0F8D207317D000CF04AD /* UserInfoCell.xib in Resources */,
 				5A1A8210206B81DA0006E56B /* LoginVC.xib in Resources */,
 				5A1A8224206CE6A70006E56B /* RegisterVC1.xib in Resources */,
+				5A4E0FA32073650300CF04AD /* GetWIFIVC.xib in Resources */,
 				5A80AF752060A29D008B9458 /* Education.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -858,19 +933,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4E0FA22073650300CF04AD /* GetWIFIVC.swift in Sources */,
 				5AB78D802068817B009A4F2E /* XMAlbumDetaliVM.swift in Sources */,
 				5AC17CAA2065005C00535C8C /* TrackCell.swift in Sources */,
 				5A1A820A206B77520006E56B /* Equipment.swift in Sources */,
+				5A4E0F8520730C7F00CF04AD /* ProfileVC.swift in Sources */,
 				5A1A8220206CE30A0006E56B /* RegisterVM.swift in Sources */,
 				5A1A822B206DC9480006E56B /* WebViewVC.swift in Sources */,
 				5A1A8223206CE6A70006E56B /* RegisterVC1.swift in Sources */,
 				5A189BAF2060D52B00A6BF08 /* GroupMsgVC.swift in Sources */,
+				5A4E0FA62073655200CF04AD /* SearchDev.swift in Sources */,
 				5A1A8218206C8BCE0006E56B /* Global.swift in Sources */,
 				5A1A820F206B81DA0006E56B /* LoginVC.swift in Sources */,
 				5AC17C912064A8B700535C8C /* AlbumCell.swift in Sources */,
+				5A4E0F9E207364F000CF04AD /* SetWIFIVC.swift in Sources */,
+				5A4E0F96207364C600CF04AD /* DevListVC.swift in Sources */,
 				5AB78D7D20687C97009A4F2E /* XMAlbumsVC.swift in Sources */,
 				5A189BAC2060D41400A6BF08 /* BaseNavigationController.swift in Sources */,
 				5A1A8212206B884F0006E56B /* UIView+Extension.swift in Sources */,
+				5A4E0FAE2073676400CF04AD /* DevCell.swift in Sources */,
 				5A80AF47206099A3008B9458 /* ViewController.swift in Sources */,
 				5AC17C882064A3C900535C8C /* FMDatabasePool.m in Sources */,
 				5AFE03082071C24E0005F31C /* MsgFrameModel.swift in Sources */,
@@ -879,14 +960,19 @@
 				5A189BCA2061F31000A6BF08 /* EducationVC.swift in Sources */,
 				5AB78D8E2068CA32009A4F2E /* HYSlider.m in Sources */,
 				5A189BB62060D7C400A6BF08 /* UIButton+Extension.swift in Sources */,
+				5A4E0F8F207318D000CF04AD /* UserInfoModel.swift in Sources */,
 				5AC17C892064A3C900535C8C /* FMResultSet.m in Sources */,
+				5A4E0FAA2073656800CF04AD /* ScanAddDev.swift in Sources */,
 				5A1A8214206C85B80006E56B /* Validate.swift in Sources */,
 				5AC17C862064A3C900535C8C /* FMDatabaseAdditions.m in Sources */,
 				5AC17C852064A3C900535C8C /* FMDatabaseQueue.m in Sources */,
 				5A189BB82060F42E00A6BF08 /* BaseTableViewCell.swift in Sources */,
+				5A4E0F9A207364D900CF04AD /* DevSetVC.swift in Sources */,
 				5A189BC02060FE0700A6BF08 /* NetWorkTools.swift in Sources */,
 				5AC17C872064A3C900535C8C /* FMDatabase.m in Sources */,
+				5A4E0F882073163A00CF04AD /* UserInfoVC.swift in Sources */,
 				5AC17C842064A3C900535C8C /* MBProgressHUD.m in Sources */,
+				5A4E0F9120731D8A00CF04AD /* UserInfoViewModel.swift in Sources */,
 				5A1A8232206E25B80006E56B /* String+Extension.swift in Sources */,
 				5AFE030A2071C4780005F31C /* GroupMsgModel.swift in Sources */,
 				5A80AF802060A7F3008B9458 /* MessageHomeVC.swift in Sources */,
@@ -903,9 +989,11 @@
 				5A189BB42060D7C400A6BF08 /* UIBarButtonItem+Extension.swift in Sources */,
 				5A80AF45206099A3008B9458 /* AppDelegate.swift in Sources */,
 				5A1A8227206CEA350006E56B /* RegisterVC2.swift in Sources */,
+				5A4E0F8C207317D000CF04AD /* UserInfoCell.swift in Sources */,
 				5A189BC62061F14700A6BF08 /* PageView.swift in Sources */,
 				5AB78D8220688C27009A4F2E /* MusicPlayerView.swift in Sources */,
 				5A189BC42060FEB000A6BF08 /* MessageHomeViewModel.swift in Sources */,
+				5A4E0F932073217D00CF04AD /* PhotoCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

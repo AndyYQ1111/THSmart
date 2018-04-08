@@ -281,6 +281,7 @@ extension PageView: UICollectionViewDataSource{
         guard let childView = childrenVC[indexPath.row].view else{
             return cell;
         }
+        
         childView.frame = cell.bounds
         cell.addSubview(childView)
         childView.backgroundColor = indexPath.row%2 == 0 ? UIColor.brown : UIColor.purple

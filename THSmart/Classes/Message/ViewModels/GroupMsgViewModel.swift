@@ -36,7 +36,6 @@ extension GroupMsgViewModel {
                 mFM.gMsgModel = model
                 self.msgs.append(mFM)
             }
-                
             finishCallBack()
         }
     }

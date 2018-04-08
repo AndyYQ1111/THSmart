@@ -1,26 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YgH-Ac-AN8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YgH-Ac-AN8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Item3-->
         <scene sceneID="e9b-lz-Ap5">
             <objects>
-                <viewController id="7xM-cv-bda" userLabel="Item3" sceneMemberID="viewController">
+                <viewController id="7xM-cv-bda" userLabel="Item3" customClass="ProfileVC" customModule="THSmart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t0z-Bl-AYo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_wo_topbg" translatesAutoresizingMaskIntoConstraints="NO" id="IFr-pp-LZn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="212"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IFr-pp-LZn" secondAttribute="height" multiplier="375:212" id="zPf-Ro-lu8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_1and1_small" translatesAutoresizingMaskIntoConstraints="NO" id="5fm-fb-81e">
+                                <rect key="frame" x="147.5" y="66" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="7H7-Hw-DrF"/>
+                                    <constraint firstAttribute="height" constant="80" id="xpz-Sn-XhA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYO-5Q-j6c">
+                                <rect key="frame" x="15" y="232" width="166.5" height="139"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="个人信息" image="icon_wo_xinxi" backgroundImage="img_wo_btnbg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="userInfoAction:" destination="7xM-cv-bda" eventType="touchUpInside" id="8Is-UX-CcF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJS-4q-oYb">
+                                <rect key="frame" x="194" y="232" width="166" height="139"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="我的设备" image="icon_wo_shebei" backgroundImage="img_wo_btnbg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="devsAction:" destination="7xM-cv-bda" eventType="touchUpInside" id="uHo-SQ-WYc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADD-Hv-fTl">
+                                <rect key="frame" x="15" y="383" width="166.5" height="139"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="使用帮助" image="icon_wo_bangzhu" backgroundImage="img_wo_btnbg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="helpAction:" destination="7xM-cv-bda" eventType="touchUpInside" id="IGa-QQ-kVf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0D-tx-KJe">
+                                <rect key="frame" x="194" y="383" width="166" height="139"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="设置" image="icon_wo_shezhi" backgroundImage="img_wo_btnbg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="setAction:" destination="7xM-cv-bda" eventType="touchUpInside" id="fmF-tx-7Es"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="vjg-sn-zWL"/>
+                        <constraints>
+                            <constraint firstItem="5fm-fb-81e" firstAttribute="centerY" secondItem="IFr-pp-LZn" secondAttribute="centerY" id="0rF-PC-OWx"/>
+                            <constraint firstItem="GJS-4q-oYb" firstAttribute="width" secondItem="kYO-5Q-j6c" secondAttribute="width" id="0vU-md-ssr"/>
+                            <constraint firstItem="e0D-tx-KJe" firstAttribute="width" secondItem="kYO-5Q-j6c" secondAttribute="width" id="1HE-sy-shn"/>
+                            <constraint firstItem="ADD-Hv-fTl" firstAttribute="leading" secondItem="kYO-5Q-j6c" secondAttribute="leading" id="6QO-jT-4ca"/>
+                            <constraint firstItem="ADD-Hv-fTl" firstAttribute="centerY" secondItem="e0D-tx-KJe" secondAttribute="centerY" id="6us-i4-7l4"/>
+                            <constraint firstItem="e0D-tx-KJe" firstAttribute="leading" secondItem="ADD-Hv-fTl" secondAttribute="trailing" constant="12" id="917-sd-MoO"/>
+                            <constraint firstItem="ADD-Hv-fTl" firstAttribute="top" secondItem="kYO-5Q-j6c" secondAttribute="bottom" constant="12" id="9wO-Sn-as1"/>
+                            <constraint firstItem="IFr-pp-LZn" firstAttribute="top" secondItem="t0z-Bl-AYo" secondAttribute="top" id="G4i-2N-iZh"/>
+                            <constraint firstItem="kYO-5Q-j6c" firstAttribute="top" secondItem="IFr-pp-LZn" secondAttribute="bottom" constant="20" id="Sf3-ja-1fU"/>
+                            <constraint firstItem="GJS-4q-oYb" firstAttribute="leading" secondItem="kYO-5Q-j6c" secondAttribute="trailing" constant="12" id="V79-sL-y0u"/>
+                            <constraint firstItem="e0D-tx-KJe" firstAttribute="trailing" secondItem="GJS-4q-oYb" secondAttribute="trailing" id="Yyv-0Y-ZEe"/>
+                            <constraint firstAttribute="trailing" secondItem="IFr-pp-LZn" secondAttribute="trailing" id="gL0-od-9lH"/>
+                            <constraint firstAttribute="trailing" secondItem="GJS-4q-oYb" secondAttribute="trailing" constant="15" id="hAi-QN-cJO"/>
+                            <constraint firstItem="5fm-fb-81e" firstAttribute="centerX" secondItem="IFr-pp-LZn" secondAttribute="centerX" id="npS-8T-bwV"/>
+                            <constraint firstItem="kYO-5Q-j6c" firstAttribute="leading" secondItem="t0z-Bl-AYo" secondAttribute="leading" constant="15" id="o3q-Yy-Crh"/>
+                            <constraint firstItem="IFr-pp-LZn" firstAttribute="leading" secondItem="t0z-Bl-AYo" secondAttribute="leading" id="uKO-vj-URX"/>
+                            <constraint firstItem="ADD-Hv-fTl" firstAttribute="width" secondItem="kYO-5Q-j6c" secondAttribute="width" id="w6b-VB-N46"/>
+                            <constraint firstItem="GJS-4q-oYb" firstAttribute="centerY" secondItem="kYO-5Q-j6c" secondAttribute="centerY" id="wFo-5v-FI8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6pz-WR-bd1"/>
+                    <connections>
+                        <outlet property="btn_dev" destination="GJS-4q-oYb" id="EUo-1x-RL0"/>
+                        <outlet property="btn_help" destination="ADD-Hv-fTl" id="BUz-pA-m1v"/>
+                        <outlet property="btn_info" destination="kYO-5Q-j6c" id="Nuf-m6-edh"/>
+                        <outlet property="btn_setting" destination="e0D-tx-KJe" id="Ocy-pl-FJr"/>
+                        <outlet property="imgv_headImg" destination="5fm-fb-81e" id="SY9-fw-aTE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vby-8c-iqt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,6 +128,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="default_1and1_small" width="47" height="47"/>
+        <image name="icon_wo_bangzhu" width="37" height="37"/>
+        <image name="icon_wo_shebei" width="37" height="37"/>
+        <image name="icon_wo_shezhi" width="37" height="37"/>
+        <image name="icon_wo_xinxi" width="37" height="37"/>
+        <image name="img_wo_btnbg" width="174" height="139"/>
+        <image name="img_wo_topbg" width="375" height="212"/>
         <image name="tab_wo_n" width="22" height="23"/>
         <image name="tab_wo_s" width="22" height="23"/>
     </resources>

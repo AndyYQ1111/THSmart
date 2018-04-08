@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIImage {
+    //通过渐变色生成渐变图片
     convenience init(gradientColors:[CGColor],size:CGSize = CGSize(width: 10, height: 10)) {
         UIGraphicsBeginImageContextWithOptions(size, true, 0)
         let context = UIGraphicsGetCurrentContext()
@@ -21,6 +22,7 @@ extension UIImage {
         UIGraphicsEndImageContext()
     }
     
+    //生成单色图片
     convenience init(color: UIColor){
         let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
         UIGraphicsBeginImageContext(rect.size)

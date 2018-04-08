@@ -25,6 +25,7 @@ extension UIButton {
         sizeToFit()
     }
     
+    //图片在上面文字在下面的按钮
     func imgUp() {
         let offset:CGFloat = 16.0
         
@@ -35,6 +36,7 @@ extension UIButton {
         self.imageEdgeInsets = UIEdgeInsets(top: -(self.titleLabel?.intrinsicContentSize.height)! - offset/2, left: 0, bottom: 0, right: -(self.titleLabel?.intrinsicContentSize.width)!)
     }
     
+    //图片在右边文字在左边的按钮
     func imgRight()  {
         let imageWidth:CGFloat = (self.imageView?.bounds.width)! + 5
         let labelWidth:CGFloat = (self.titleLabel?.bounds.width)!
