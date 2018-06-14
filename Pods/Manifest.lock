@@ -1,6 +1,6 @@
 PODS:
-  - Alamofire (4.7.0)
-  - Kingfisher (4.6.3)
+  - Alamofire (4.7.2)
+  - Kingfisher (4.7.0)
   - SnapKit (4.0.0)
   - Toast-Swift (3.0.1)
 
@@ -10,12 +10,19 @@ DEPENDENCIES:
   - SnapKit
   - Toast-Swift
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - SnapKit
+    - Toast-Swift
+
 SPEC CHECKSUMS:
-  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
-  Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
 
 PODFILE CHECKSUM: 2f8a810e198086026427d927c342c518bb4d13b5
 
-COCOAPODS: 1.4.0.beta.1
+COCOAPODS: 1.5.2
